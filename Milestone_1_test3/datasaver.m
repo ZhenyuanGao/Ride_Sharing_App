@@ -7,3 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
+
+NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+[def setObject:data forKey:@"yourKey"]
