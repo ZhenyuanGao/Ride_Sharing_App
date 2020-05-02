@@ -101,6 +101,7 @@ class ViewController: UIViewController,PKPaymentAuthorizationViewControllerDeleg
     @IBAction func reserveInvitation(_ sender: Any) {
     self.performSegue(withIdentifier: "ForthViewSegue", sender: self)
     
+    
     }
 //accept an invitation button
     @IBOutlet weak var acceptInvB: UIButton!
@@ -113,5 +114,8 @@ class ViewController: UIViewController,PKPaymentAuthorizationViewControllerDeleg
     
     }
     
+
+
+
 }
 

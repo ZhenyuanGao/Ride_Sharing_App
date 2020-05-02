@@ -83,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     //My passage matching algorithm for invitation,which checks for whether the location, the title and the amount of people are the same and check if the similar words are more than 50 percents of the whole text in the text view.
     func test_of_match_up_for_invitation() -> Bool {
-        if(appReqLocation4==appInvLocation3  && appReqNum4==appInvNum3&&inputTitle3==inputTitle4&&fromWords2ratio(words: string2Array(longPara : appaccInv), words2: string2Array(longPara : appReqInvText))>0.5){
+        if(appReqLocation4==appInvLocation3  && appReqNum4==appInvNum3&&inputTitle3==inputTitle4&&fromWords2ratio(words: string2Array(longPara : appaccInv), words2: string2Array(longPara : appReqInvText))>0.35){
   
         return true
         }
