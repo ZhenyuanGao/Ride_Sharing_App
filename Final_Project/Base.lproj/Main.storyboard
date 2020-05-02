@@ -10,7 +10,7 @@
         <!--Second View Controller-->
         <scene sceneID="ygF-CU-rUf">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="Ohw-ok-ceg" customClass="SecondViewController" customModule="Milestone_1_test3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="Ohw-ok-ceg" customClass="SecondViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4np-4n-P21">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,19 +107,19 @@
         <!--Third View Controller-->
         <scene sceneID="HN2-vM-Ek5">
             <objects>
-                <viewController storyboardIdentifier="ThirdViewController" id="jZ4-YR-FfT" customClass="ThirdViewController" customModule="Milestone_1_test3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdViewController" id="jZ4-YR-FfT" customClass="ThirdViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SoR-lr-Jpg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can accept the request over here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuo-eQ-aE1">
-                                <rect key="frame" x="0.0" y="67" width="537" height="20.5"/>
+                                <rect key="frame" x="0.0" y="67" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-rD-yfk">
-                                <rect key="frame" x="0.0" y="490" width="537" height="237"/>
+                                <rect key="frame" x="0.0" y="490" width="414" height="237"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="237" id="7WR-NX-O2w"/>
@@ -209,7 +209,7 @@
         <!--Fifth View Controller-->
         <scene sceneID="IBP-bd-IX4">
             <objects>
-                <viewController id="rlD-hv-SAg" customClass="FifthViewController" customModule="Milestone_1_test3" sceneMemberID="viewController">
+                <viewController id="rlD-hv-SAg" customClass="FifthViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ABf-q3-JAn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,7 +307,7 @@
         <!--Forth View Controller-->
         <scene sceneID="xmE-pE-oYa">
             <objects>
-                <viewController storyboardIdentifier="ForthViewController" id="wOJ-KG-wdc" customClass="ForthViewController" customModule="Milestone_1_test3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForthViewController" id="wOJ-KG-wdc" customClass="ForthViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Sp-FJ-woV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -400,7 +400,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Milestone_1_test3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

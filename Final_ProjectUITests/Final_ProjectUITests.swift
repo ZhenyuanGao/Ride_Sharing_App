@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Milestone_1_test3UITests: XCTestCase {
+class Final_ProjectTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
