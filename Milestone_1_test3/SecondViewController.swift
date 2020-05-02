@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PassKit
 class SecondViewController: UIViewController {
 
     weak var myParent: AppDelegate!
@@ -23,11 +23,13 @@ class SecondViewController: UIViewController {
     let textSample: String = ""
     
     
-    @IBOutlet weak var reqSaveButton: UIButton!
-    
+   
+    //the textview
     @IBOutlet weak var inputTitle: UITextView!
-    
+    //the input box for title
     @IBOutlet weak var testTextField: UITextField!
+    
+    //put data into variable in appDelegate
     @IBAction func inputTextField(_ sender: Any) {
         
         let textSample: String = testTextField.text!
@@ -35,8 +37,9 @@ class SecondViewController: UIViewController {
         self.myParent.appReqCategory.append(textSample)
         
 }
-    
+    //how many people go with
     @IBOutlet weak var requestnumber: UITextField!
+    //where the location is
     @IBOutlet weak var requestLocation: UITextField!
     
     
@@ -49,8 +52,8 @@ class SecondViewController: UIViewController {
         self.myParent.appReqLocation.append(textRequest)
         
         
-}
-
+    }
+//put the number in the variable in appDelegate
 @IBAction func inputrequestNumber(_ sender: Any) {
 
 let textRequestNumber: String = requestnumber.text!
@@ -58,25 +61,13 @@ let textRequestNumber: String = requestnumber.text!
     
     self.myParent.appReqNum.removeAll()
     self.myParent.appReqNum.append(textRequestNumber)
-    
-    
-    
-    }
-    
-    
-    
-    
-    
+}
+
+    //put the variable in the variable in appDelegate
     @IBAction func inputTitle1(_ sender: Any) {
         let text2: String = inputTitle.text!
-        
-       
-    
         self.myParent.inputTitle1.removeAll()
         self.myParent.inputTitle1.append(text2)
-        
-        
-           //other functions maybe
         print(self.myParent.test_app_view_delegate())
         self.myParent.writeInTheMakingRequestFile()
        }

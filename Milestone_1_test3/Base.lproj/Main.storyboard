@@ -61,7 +61,7 @@
                                     <action selector="inputrequestNumber:" destination="Ohw-ok-ceg" eventType="editingChanged" id="f5J-hi-sxx"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="I am Kevin Gao. I am planning on going to grocery shopping on Feb 14th at 5:30 p.m. The place I am thinking is Trader Joe's ." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RgG-94-A7j">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RgG-94-A7j">
                                 <rect key="frame" x="52" y="468" width="240" height="177"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -113,37 +113,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can accept the request over here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuo-eQ-aE1">
-                                <rect key="frame" x="0.0" y="67" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="67" width="537" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buh-5H-bhe">
-                                <rect key="frame" x="143" y="772" width="128" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="qxO-R1-bFS"/>
-                                    <constraint firstAttribute="height" constant="36" id="rbm-b6-ps4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title=" Save and Post"/>
-                                <connections>
-                                    <action selector="saveAndPost:" destination="jZ4-YR-FfT" eventType="touchUpInside" id="8kN-YA-XMU"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-rD-yfk">
-                                <rect key="frame" x="0.0" y="504" width="414" height="237"/>
+                                <rect key="frame" x="0.0" y="490" width="537" height="237"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="237" id="7WR-NX-O2w"/>
                                     <constraint firstAttribute="width" constant="414" id="dtg-Es-F8F"/>
                                 </constraints>
-                                <string key="text">I am Zhenyuan. I am going to accept the request by Kevin Gao on grocery shopping on Feb 14th at 5:30 p.m.  The location is Trader Joe's.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the title of your request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="21a-4E-gO2">
-                                <rect key="frame" x="45" y="145" width="237" height="90"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the title of your request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="21a-4E-gO2">
+                                <rect key="frame" x="0.0" y="146" width="237" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="6Vv-cN-kWs"/>
                                     <constraint firstAttribute="height" constant="90" id="Ngj-kp-r1f"/>
@@ -154,22 +141,34 @@
                                     <action selector="accReqTitle:" destination="jZ4-YR-FfT" eventType="editingChanged" id="MT9-kc-CUt"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the location of the request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73O-TW-hIG">
-                                <rect key="frame" x="45" y="288" width="237" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the location of the request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73O-TW-hIG">
+                                <rect key="frame" x="0.0" y="256" width="237" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="Reqlocation:" destination="jZ4-YR-FfT" eventType="editingChanged" id="JNz-PY-ddd"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter people involved" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQZ-tD-u1e">
-                                <rect key="frame" x="45" y="355" width="237" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter people involved" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQZ-tD-u1e">
+                                <rect key="frame" x="0.0" y="350" width="237" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="countPeople:" destination="jZ4-YR-FfT" eventType="editingChanged" id="E7u-ow-I4J"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buh-5H-bhe">
+                                <rect key="frame" x="20" y="772" width="128" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="qxO-R1-bFS"/>
+                                    <constraint firstAttribute="height" constant="36" id="rbm-b6-ps4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Save and Post"/>
+                                <connections>
+                                    <action selector="saveAndPost:" destination="jZ4-YR-FfT" eventType="touchUpInside" id="8kN-YA-XMU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -184,7 +183,11 @@
                             <constraint firstItem="Buh-5H-bhe" firstAttribute="top" secondItem="Zo6-rD-yfk" secondAttribute="bottom" constant="31" id="XDT-KC-nZd"/>
                             <constraint firstItem="LOM-XW-CbC" firstAttribute="trailing" secondItem="Buh-5H-bhe" secondAttribute="trailing" constant="143" id="Z1c-tI-1Hq"/>
                             <constraint firstItem="Yuo-eQ-aE1" firstAttribute="leading" secondItem="LOM-XW-CbC" secondAttribute="leading" id="bEi-NQ-inc"/>
+                            <constraint firstItem="Buh-5H-bhe" firstAttribute="top" secondItem="Zo6-rD-yfk" secondAttribute="bottom" constant="81" id="i1l-eI-dFX"/>
+                            <constraint firstItem="Buh-5H-bhe" firstAttribute="leading" secondItem="LOM-XW-CbC" secondAttribute="leading" constant="20" id="jTu-rX-cEi"/>
+                            <constraint firstItem="LOM-XW-CbC" firstAttribute="trailing" secondItem="Buh-5H-bhe" secondAttribute="trailing" constant="266" id="k3V-hN-dSq"/>
                             <constraint firstItem="Zo6-rD-yfk" firstAttribute="trailing" secondItem="LOM-XW-CbC" secondAttribute="trailing" id="kUx-Xj-200"/>
+                            <constraint firstItem="LOM-XW-CbC" firstAttribute="bottom" secondItem="Buh-5H-bhe" secondAttribute="bottom" constant="14" id="krb-f4-VYI"/>
                             <constraint firstItem="Yuo-eQ-aE1" firstAttribute="top" secondItem="LOM-XW-CbC" secondAttribute="top" constant="67" id="qsI-Z3-uAP"/>
                             <constraint firstItem="73O-TW-hIG" firstAttribute="top" secondItem="21a-4E-gO2" secondAttribute="bottom" constant="53" id="rxC-qD-cny"/>
                             <constraint firstItem="WQZ-tD-u1e" firstAttribute="top" secondItem="73O-TW-hIG" secondAttribute="bottom" constant="33" id="sCI-TK-ycX"/>
@@ -211,26 +214,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfc-ig-ASN">
-                                <rect key="frame" x="20" y="460" width="374" height="220"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="PAd-U7-Mju"/>
-                                    <constraint firstAttribute="width" constant="374" id="kkY-k0-1L3"/>
-                                </constraints>
-                                <string key="text">I am Jared. I am going to accept the invitation by Felix on going to Amusement Park together on Feb 14th at 5:30 p.m.  The location is Goleta.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Please enter your invitation. Make sure to cover the time, where, and what exactly you want to request." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XU-JQ-9a0">
                                 <rect key="frame" x="10" y="56" width="394" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUe-M6-0Jo">
-                                <rect key="frame" x="143" y="740" width="128" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUe-M6-0Jo">
+                                <rect key="frame" x="36" y="743" width="128" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="py7-1b-bUu"/>
                                     <constraint firstAttribute="height" constant="36" id="v3h-5b-TTN"/>
@@ -242,7 +233,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the title of your request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aes-Y5-Hzp">
-                                <rect key="frame" x="74" y="178" width="237" height="90"/>
+                                <rect key="frame" x="20" y="178" width="237" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="EMP-2K-U2l"/>
                                     <constraint firstAttribute="height" constant="90" id="vDs-jk-stG"/>
@@ -253,22 +244,33 @@
                                     <action selector="fifthTitle:" destination="rlD-hv-SAg" eventType="editingChanged" id="wbp-pc-OXG"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the location of the request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vp-EU-xYB">
-                                <rect key="frame" x="74" y="321" width="237" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the location of the request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vp-EU-xYB">
+                                <rect key="frame" x="20" y="276" width="237" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="fifthLocation:" destination="rlD-hv-SAg" eventType="editingChanged" id="WMN-bw-qXx"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter people involved" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8o4-FE-EZ7">
-                                <rect key="frame" x="74" y="388" width="237" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter people involved" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8o4-FE-EZ7">
+                                <rect key="frame" x="20" y="366" width="237" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="fifthPeople:" destination="rlD-hv-SAg" eventType="editingChanged" id="jQC-VO-99Q"/>
                                 </connections>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lfc-ig-ASN">
+                                <rect key="frame" x="0.0" y="455" width="374" height="220"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="PAd-U7-Mju"/>
+                                    <constraint firstAttribute="width" constant="374" id="kkY-k0-1L3"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -364,7 +366,6 @@
                                     <constraint firstAttribute="width" constant="307" id="I9b-US-LaY"/>
                                     <constraint firstAttribute="height" constant="244.5" id="Qpo-w9-EoM"/>
                                 </constraints>
-                                <string key="text">I am Felix, I am planning on going to the Amusement Park. If anyone want to go together with us on Feb 14th at 5:30 p.m.  The location is Goleta by the way.  </string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
