@@ -171,7 +171,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       //just a combine all infomation together
      
 
-         //let fileURL = dir.appendingPathComponent(file)
+         
          
          do {
              let data = try NSString(contentsOfFile: file,
@@ -213,10 +213,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         let text = inputTitle3+" "+appInvLocation3+" "+appInvNum3+" "+appReqInvText
          //just a combine all infomation together
-       
-
-            //let fileURL = dir.appendingPathComponent(file)
-            
+     
             do {
                 let data = try NSString(contentsOfFile: file_invitation,
                 encoding: String.Encoding.ascii.rawValue)
@@ -227,14 +224,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             }
             catch{/* error handling here */}
-            // If a value was returned, print it.
-                // read here
-           // do {
-            //    let text2 = try String(contentsOfFile: file, encoding: .utf8)
-                
-                
-            //}
-          //  catch {/* error handling here */}
+           
         }
             
   
